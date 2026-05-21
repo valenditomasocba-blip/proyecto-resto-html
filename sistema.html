@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="codigo.js"></script>
+  <title>SISTEMA</title>
+  <link rel="stylesheet" href="estilos2.css">
+</head>
+
+<body>
+  <div class="contenedor">
+  <div id="div2" style="margin-left: 180px;">
+
+    <h1>RESERVA DE MESA</h1>
+    <form>
+      <p><strong>Nombre</strong> <input type="text" id="nombre" placeholder="indique su nombre" required></p>
+      <p>Apellido <input type="text" id="apellido" placeholder="indique apellido"></p>
+      <p><u>PERSONAS</u> <input type="number" id="personas"></p>
+      <p>Fecha <input type="date" name="fecha" value="2026-05-22"></p>
+      <p>EMAIL <input type="email" id="email" placeholder="Indique su email"></p>
+      <p>TURNO : Almuerzo <input type="radio" name="turno" value="Almuerzo"> Cena
+        <input type="radio" name="turno" value="Cena">
+    </form>
+
+    <button onclick="reservar()">RESERVAR</button>
+    <br>
+    <p id="resultado3"></p>
+
+  </div>
+
+
+  <div id="div2">
+
+    <h1 class="nuevo">CONSULTAR MENU</h1>
+
+    <form>
+
+      <p>Plato:<select id="plato">
+          <option value="1">MILANESA</option>
+          <option value="2">PIZZA</option>
+          <option value="3">HAMBURGUESA</option>
+          <option value="4">PASTAS</option>
+        </select>
+      </p>
+
+      <p>Bebida:<select id="bebida">
+          <option value="1">AGUA</option>
+          <option value="2">GASEOSA</option>
+          <option value="3">JUGO</option>
+          <option value="4">LIMONADA</option>
+        </select>
+    </form>
+
+    <button onclick="cotizar()">COTIZAR</button>
+    <button onclick="limpiarCotizacion()">LIMPIAR</button>
+    <br>
+    <p id="resultado4"></p>
+
+  </div>
+</div>
+  </div>
+  <br>
+  <br>
+  <a href="contacto.html">IR A CONTACTO</a>
+  <br>
+  <br>
+  <a href="index.html">VOLVER AL INICIO</a>
+  </div>
+
+</body>
+
+</html>

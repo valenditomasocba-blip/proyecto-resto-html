@@ -1,3 +1,4 @@
+var mesas = 5;
 function validar() {
 
     var usu = document.getElementById("usuario").value;

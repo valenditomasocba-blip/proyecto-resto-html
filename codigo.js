@@ -39,7 +39,7 @@ function reservar() {
         mesas--;
 
         document.getElementById("resultado3").textContent =
-        "RESERVA REALIZADA - MESAS DISPONIBLES: " + mesas;
+        "RESERVA REALIZADA - LAS CANTIDAD DE MESAS DISPONIBLES QUE QUEDAN SON: " + mesas;
 
     } else {
 

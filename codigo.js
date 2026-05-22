@@ -17,7 +17,7 @@ function limpiar() {
     document.getElementById("clave").value = "";
 }
 
-//funcion para reservar
+
 
 function reservar() {
     var ema = document.getElementById("email").value;
@@ -27,11 +27,27 @@ function reservar() {
     document.getElementById("email").value = "";
 
     if (ema == "cliente@gmail.com") {
-        document.getElementById("resultado3").textContent = "CLIENTE YA TIENE RESERVA";
+
+    document.getElementById("resultado3").textContent =
+    "CLIENTE YA TIENE RESERVA";
+
     } else {
-        document.getElementById("resultado3").textContent = "RESERVA REALIZADA";
+
+    if (mesas > 0) {
+
+        mesas--;
+
+        document.getElementById("resultado3").textContent =
+        "RESERVA REALIZADA - MESAS DISPONIBLES: " + mesas;
+
+    } else {
+
+        document.getElementById("resultado3").textContent =
+        "NO HAY MAS MESAS DISPONIBLES";
+
     }
 
+}
 }
 
 
